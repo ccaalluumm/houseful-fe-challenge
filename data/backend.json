@@ -31,6 +31,22 @@
       "address": "Marlborough Place, St John's Wood, London NW8",
       "price": 12950000,
       "status": "active"
+    },
+    {
+      "id": "5",
+      "image": "/assets/images/house5.png",
+      "bedrooms": 5,
+      "address": "17 Cameron March, Edinburgh EH16",
+      "price": 425000,
+      "status": "active"
+    },
+    {
+      "id": "6",
+      "image": "/assets/images/house6.png",
+      "bedrooms": 8,
+      "address": "Withdean Road, Brighton BN1",
+      "price": 2350000,
+      "status": "expired"
     }
   ]
 }
