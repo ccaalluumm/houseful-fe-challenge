@@ -1,36 +1,36 @@
 {
-	"listings": [
-		{
-			"id": "1",
-			"image": "/assets/images/house1.png",
-			"bedrooms": 6,
-			"address": "Frognal, Hampstead, London NW3",
-			"price": 10950000,
-			"status": "active"
-		},
-		{
-			"id": "2",
-			"image": "/assets/images/house2.png",
-			"bedrooms": 3,
-			"address": "",
-			"price": 775000,
-			"status": "expired"
-		},
-		{
-			"id": "3",
-			"image": "/assets/images/house3.png",
-			"bedrooms": 6,
-			"address": "Vale Close, Maida Vale, London W9",
-			"price": 6250000,
-			"status": "active"
-		},
-		{
-			"id": "4",
-			"image": "/assets/images/house4.png",
-			"bedrooms": 5,
-			"address": "Marlborough Place, St John's Wood, London NW8",
-			"price": 12950000,
-			"status": "active"
-		}
-	]
+  "listings": [
+    {
+      "id": "1",
+      "image": "/assets/images/house1.png",
+      "bedrooms": 6,
+      "address": "Frognal, Hampstead, London NW3",
+      "price": 10950000,
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "image": "/assets/images/house2.png",
+      "bedrooms": 3,
+      "address": "Eaton Terrace, London SW1W",
+      "price": 775000,
+      "status": "expired"
+    },
+    {
+      "id": "3",
+      "image": "/assets/images/house3.png",
+      "bedrooms": 6,
+      "address": "Vale Close, Maida Vale, London W9",
+      "price": 6250000,
+      "status": "active"
+    },
+    {
+      "id": "4",
+      "image": "/assets/images/house4.png",
+      "bedrooms": 5,
+      "address": "Marlborough Place, St John's Wood, London NW8",
+      "price": 12950000,
+      "status": "active"
+    }
+  ]
 }
