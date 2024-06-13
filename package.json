@@ -11,7 +11,9 @@
     "build": "tsc && vite build",
     "test": "vitest run --config vite.config.ts",
     "test:watch": "vitest --config vite.config.ts",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
@@ -20,6 +22,15 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.5.0",
+    "@storybook/addon-essentials": "^8.1.8",
+    "@storybook/addon-interactions": "^8.1.8",
+    "@storybook/addon-links": "^8.1.8",
+    "@storybook/addon-onboarding": "^8.1.8",
+    "@storybook/blocks": "^8.1.8",
+    "@storybook/react": "^8.1.8",
+    "@storybook/react-vite": "^8.1.8",
+    "@storybook/test": "^8.1.8",
     "@testing-library/jest-dom": "6.4.2",
     "@testing-library/react": "15.0.2",
     "@types/node": "20.12.7",
@@ -29,6 +40,7 @@
     "jsdom": "24.0.0",
     "json-server": "1.0.0-beta.1",
     "prettier": "^3.3.2",
+    "storybook": "^8.1.8",
     "typescript": "5.4.5",
     "vite": "5.2.9",
     "vitest": "1.5.0"
