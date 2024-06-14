@@ -6,6 +6,12 @@ This codebase implements a solution in React with the help of some extra tooling
 
 A goal or requirement of the solution is to facilitate: maintainability, scaleability, responsiveness, tested logic, accessibility, and semantic code. These requirements have been met in various ways:
 
+- TDD
+- Storybook
+- Prettier
+- React Testing Library
+- TypeScript
+
 ## Backend
 
 A mock backend API is implemented using [json-server](https://www.npmjs.com/package/json-server) that returns a list of homes for sale. You can run the backend locally on your command line by running: `pnpm run api`.

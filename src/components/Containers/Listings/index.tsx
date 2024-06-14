@@ -21,7 +21,6 @@ export const Listings = () => {
         setListings(jsonData);
       } catch (err) {
         setError(err);
-        console.error(err);
       } finally {
         setLoading(false);
       }
