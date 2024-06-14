@@ -2,7 +2,7 @@
 
 This codebase implements a solution in React with the help of some extra tooling and technologies. To run the application start the frontend with `pnpm run dev` and then the backend with `pnpm run api`.
 
-## NFR
+## Nonfunctional Requirements
 
 A goal or requirement of the solution is to facilitate: maintainability, scaleability, responsiveness, tested logic, accessibility, and semantic code. These requirements have been met in various ways:
 
