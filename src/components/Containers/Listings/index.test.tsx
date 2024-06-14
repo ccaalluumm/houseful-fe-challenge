@@ -24,6 +24,7 @@ const mockListings = [
 describe("Listings", () => {
   it("should render an error message if the api returns an error", async () => {
     // Arrange
+    const consoleErrorSpy = vi.spyOn(console, "error").mockImplementation(() => {}); // spy on console to prevent test suite output pollution
     const mockError = new Error("Failed to fetch listings");
     vi.spyOn(global, "fetch").mockRejectedValueOnce(mockError);
     // Act
@@ -33,6 +34,7 @@ describe("Listings", () => {
     await waitFor(() => {
       expect(screen.queryByText("Error: Failed to fetch listings")).toBeInTheDocument();
     });
+    consoleErrorSpy.mockRestore();
   });
 
   it("should render listings if the api successfully returns", async () => {
