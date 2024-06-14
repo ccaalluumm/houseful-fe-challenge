@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import { getListings } from "../../../api/getListings";
 import { Col, Container, Row } from "react-bootstrap";
 import { ListingCard } from "../../Cards/ListingCard";
-import { putListing } from "../../../api/putListing";
 import { Listing } from "./types";
-import { PutListingRequest } from "../../../api/putListing/types";
 
 export const Listings = () => {
   const [listings, setListings] = useState<Listing[] | null>(null);
