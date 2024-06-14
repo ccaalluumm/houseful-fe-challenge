@@ -9,7 +9,6 @@ const testProps: ListingCardProps = {
   address: "Frognal, Hampstead, London NW3",
   price: 1000000,
   status: "active",
-  onClick: function (): void {},
 };
 
 describe("ListingCard", () => {
@@ -23,7 +22,6 @@ describe("ListingCard", () => {
         address={testProps.address}
         price={testProps.price}
         status={testProps.status}
-        onClick={testProps.onClick}
       />,
     );
 
