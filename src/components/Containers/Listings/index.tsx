@@ -29,21 +29,6 @@ export const Listings = () => {
     fetchData();
   }, []);
 
-  const handleOnClick = async ({ id, status }: PutListingRequest) => {
-    try {
-      await putListing({ id, status });
-
-      const listingsData = await getListings();
-
-      const jsonData: Listing[] = await listingsData.json();
-
-      setListings(jsonData);
-    } catch (err) {
-      setError(err);
-      console.error(err);
-    }
-  };
-
   return (
     <Container fluid="md" data-testid="listings">
       <Row>
@@ -61,7 +46,6 @@ export const Listings = () => {
                 address={listing.address}
                 price={listing.price}
                 status={listing.status}
-                onClick={handleOnClick}
               />
             </Col>
           ))}
