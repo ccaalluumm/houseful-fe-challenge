@@ -1,19 +1,12 @@
 import { FC } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { ListingCardProps } from "./types";
 
-export type ListingCardProps = {
-  image: string;
-  bedrooms: number;
-  address: string;
-  price: number;
-  status: "active" | "expired";
-};
-
-export const ListingCard: FC<ListingCardProps> = ({ image, bedrooms, address, price, status }) => {
+export const ListingCard: FC<ListingCardProps> = ({ id, imageUrl, bedrooms, address, price, status, onClick }) => {
   return (
-    <Card style={{ width: "20rem" }} data-testid="listing-card" bg="light">
-      <Card.Img variant="top" src={image} />
+    <Card style={{ width: "20rem", height: "460px", margin: "auto" }} data-testid="listing-card" bg="light">
+      <Card.Img variant="top" src={imageUrl} />
       <Card.Body>
         <Card.Title>
           {new Intl.NumberFormat("en-GB", {
@@ -33,7 +26,11 @@ export const ListingCard: FC<ListingCardProps> = ({ image, bedrooms, address, pr
           {status === "active" ? "Active" : "Expired"}
         </Card.Text>
         <div className="d-grid gap-2">
-          <Button variant="primary" size="sm">
+          <Button
+            size="sm"
+            style={{ backgroundColor: "#DBFF3B", borderColor: "#DBFF3B", color: "black", fontWeight: "bold" }}
+            onClick={() => onClick({ id, status: status === "active" ? "expired" : "active" })}
+          >
             {status === "active" ? "Set as expired" : "Set as active"}
           </Button>
         </div>

@@ -1,12 +1,15 @@
 import { render } from "@testing-library/react";
-import { ListingCard, ListingCardProps } from ".";
+import { ListingCard } from ".";
+import { ListingCardProps } from "./types";
 
 const testProps: ListingCardProps = {
-  image: "/assets/images/house1.png",
+  id: "1",
+  imageUrl: "/assets/images/house1.png",
   bedrooms: 10,
   address: "Frognal, Hampstead, London NW3",
   price: 1000000,
   status: "active",
+  onClick: function (): void {},
 };
 
 describe("ListingCard", () => {
@@ -14,11 +17,13 @@ describe("ListingCard", () => {
     // Arrange
     const { getByTestId, getByText, queryByText } = render(
       <ListingCard
-        image={testProps.image}
+        id={testProps.id}
+        imageUrl={testProps.imageUrl}
         bedrooms={testProps.bedrooms}
         address={testProps.address}
         price={testProps.price}
         status={testProps.status}
+        onClick={testProps.onClick}
       />,
     );
 
