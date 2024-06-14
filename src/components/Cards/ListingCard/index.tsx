@@ -12,6 +12,7 @@ export const ListingCard: FC<ListingCardProps> = ({ id, imageUrl, bedrooms, addr
       await putListing({ id, status });
       setLocalStatus(localStatus === "active" ? "expired" : "active");
     } catch (err) {
+      // @TODO: add toast component to render message to user
       console.error(`Failed to update the status of resrouce with id=${id}. ${err}`);
     }
   };
