@@ -1,6 +1,6 @@
 # Solution
 
-This codebase implements a solution in React with the help of some extra tooling and technologies.
+This codebase implements a solution in React with the help of some extra tooling and technologies. To run the application start the frontend with `pnpm run dev` and then the backend with `pnpm run api`.
 
 ## NFR
 
@@ -14,7 +14,7 @@ A goal or requirement of the solution is to facilitate: maintainability, scaleab
 
 ## Backend
 
-A mock backend API is implemented using [json-server](https://www.npmjs.com/package/json-server) that returns a list of homes for sale. You can run the backend locally on your command line by running: `pnpm run api`.
+A mock backend API is implemented using [json-server](https://www.npmjs.com/package/json-server) that returns a list of homes for sale.
 
 # Houseful front-end challenge
 
